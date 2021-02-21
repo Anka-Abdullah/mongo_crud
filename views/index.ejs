@@ -1,0 +1,52 @@
+    <%- include('include/_link') %>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- include header -->
+    <%- include('include/_header') %>
+    <!-- /include header -->
+    <div class="container">
+      <button type="button" class="btn m-4 rounded-pill px-4 border-info">
+        <a href="/add_user" class="btn-outline-info bg-white"
+          >Add New User<i class="fas fa-user-plus"></i
+        ></a>
+      </button>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>Otto</td>
+              <td>
+                <button type="button" class="btn p-0 me-3">
+                  <a href="/update_user" class="text-warning"
+                    ><i class="fas fa-user-edit"></i
+                  ></a>
+                </button>
+                <button type="button" class="btn p-0">
+                  <a href="/add-user" class="text-danger"
+                    ><i class="fas fa-pencil-alt"></i
+                  ></a>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <form>
+          <%= users%>
+        </form>
+    </div>
+  </body>
+</html>

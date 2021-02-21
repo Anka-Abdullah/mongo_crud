@@ -1,0 +1,48 @@
+    <%- include('include/_link') %>
+    <title>Add User</title>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <a href="/" class="m-5"
+        ><i class="fas fa-chevron-left"></i
+        ><i class="fas fa-chevron-left"></i>Home</a
+      >
+      <div class="card border-0 mx-auto" style="max-width: 550px">
+        <form action="/" method="post">
+          <h4 class="text-center my-4">New User</h4>
+          <p class="m-0 text-center">
+            Use the bellow form to create a new create
+          </p>
+          <div class="mb-3">
+            <label class="form-label">Full Name :</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email Address :</label>
+            <input type="email" class="form-control" />
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5>Gender</h5>
+              <input class="form-check-input" type="radio" name="gender" />
+              <label class="form-check-label"> Male </label>
+              <input class="form-check-input ms-3" type="radio" name="gender" />
+              <label class="form-check-label"> Female </label>
+            </div>
+            <div class="col">
+              <h5>status</h5>
+              <input class="form-check-input" type="radio" name="status" />
+              <label class="form-check-label"> Active </label>
+              <input class="form-check-input ms-3" type="radio" name="status" />
+              <label class="form-check-label"> In-active </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-info w-100 mt-4 text-white">
+            save <i class="fas fa-save"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
